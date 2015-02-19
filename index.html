@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>WebPong</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript" src="game.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<fieldset>
+			<h1>Options</h1>
+			<dl id="config">
+				<dt><label for="backgroundColor">Background color:</label></dt>
+				<dd><input id="backgroundColor" type="color"/></dd>
+				<dt><label for="ballAcceleration">Ball acceleration:</label></dt>
+				<dd><input id="ballAcceleration" type="range" min="0" max="0.2" step="0.0001"/></dd>
+				<dt><label for="ballColor">Ball color:</label></dt>
+				<dd><input id="ballColor" type="color"/></dd>
+				<dt><label for="ballRadius">Ball radius:</label></dt>
+				<dd><input id="ballRadius" type="range" min="0.01" max="0.1" step="0.0001"/></dd>
+				<dt><label for="ballVelocity">Ball velocity:</label></dt>
+				<dd><input id="ballVelocity" type="range" min="0.01" max="1.0" step="0.0001"/></dd>
+				<dt><label for="maxAngle">Maximum angle:</label></dt>
+				<dd><input id="maxAngle" type="range" min="10" max="60" step="0.0001"/></dd>
+				<dt><label for="paddleColor">Paddle color:</label></dt>
+				<dd><input id="paddleColor" type="color"/></dd>
+				<dt><label for="paddleSize">Paddle size:</label></dt>
+				<dd><input id="paddleSize" type="range" min="0.1" max="0.5" step="0.0001"/></dd>
+				<dt><label for="paddleThickness">Paddle thickness:</label></dt>
+				<dd><input id="paddleThickness" type="range" min="0.01" max="0.1" step="0.0001"/></dd>
+				<dt><label for="paddleVelocity">Paddle velocity:</label></dt>
+				<dd><input id="paddleVelocity" type="range" min="0.5" max="2.0" step="0.0001"/></dd>
+				<dt><label for="scoreFontColor">Score color:</label></dt>
+				<dd><input id="scoreFontColor" type="color"/></dd>
+				<dt><label for="scoreFontFamily">Score font:</label></dt>
+				<dd>
+					<select id="scoreFontFamily">
+						<option>Arial</option>
+						<option>Comic Sans MS</option>
+						<option>Courier New</option>
+						<option>Microsoft Sans Serif</option>
+						<option>Segoe UI</option>
+						<option>Times New Roman</option>
+						<option>Tahoma</option>
+						<option>Verdana</option>
+					</select>
+				</dd>
+				<dt><label for="scoreFontSize">Score size:</label></dt>
+				<dd><input id="scoreFontSize" type="range" min="0.02" max="0.07" step="0.0001"/></dd>
+				<dt><label for="scoreOffset">Score position:</label></dt>
+				<dd><input id="scoreOffset" type="range" min="0" max="0.2" step="0.0001"/></dd>
+				<dt><label for="uiFontColor">Message color:</label></dt>
+				<dd><input id="uiFontColor" type="color"/></dd>
+				<dt><label for="uiFontFamily">Message font:</label></dt>
+				<dd>
+					<select id="uiFontFamily">
+						<option>Arial</option>
+						<option>Comic Sans MS</option>
+						<option>Courier New</option>
+						<option>Microsoft Sans Serif</option>
+						<option>Segoe UI</option>
+						<option>Times New Roman</option>
+						<option>Tahoma</option>
+						<option>Verdana</option>
+					</select>
+				</dd>
+				<dt><label for="uiFontSize">Message size:</label></dt>
+				<dd><input id="uiFontSize" type="range" min="0.01" max="0.15" step="0.0001"/></dd>
+			</dl>
+		</fieldset>
+		<canvas id="display"></canvas>
+	</body>
+</html>
